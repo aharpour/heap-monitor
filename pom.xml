@@ -17,7 +17,6 @@
   </scm>
 
   <distributionManagement>
-    <downloadUrl />
     <repository>
       <id>sf-heap-monitor-repo</id>
       <url>svn:https://svn.code.sf.net/p/heap-monitor/code/maven2/</url>
@@ -64,6 +63,13 @@
   </dependencies>
   <build>
     <finalName>heap-monitor</finalName>
+    <extensions>
+      <extension>
+        <groupId>org.jvnet.wagon-svn</groupId>
+        <artifactId>wagon-svn</artifactId>
+        <version>1.9</version>
+      </extension>
+    </extensions>
     <plugins>
       <plugin>
         <groupId>org.mortbay.jetty</groupId>
