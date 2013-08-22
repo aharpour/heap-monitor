@@ -4,7 +4,7 @@
   <artifactId>heap-monitor</artifactId>
   <packaging>war</packaging>
   <version>1.1-SNAPSHOT</version>
-  
+
   <name>Heap Monitor</name>
   <url>http://heap-monitor.sourceforge.net/</url>
   <properties>
@@ -53,6 +53,12 @@
         <version>6.1.10</version>
         <configuration>
           <scanIntervalSeconds>3</scanIntervalSeconds>
+          <userRealms>
+            <userRealm implementation="org.mortbay.jetty.security.HashUserRealm">
+              <name>Admin Realm</name>
+              <config>etc/realm.properties</config>
+            </userRealm>
+          </userRealms>
         </configuration>
         <executions>
           <execution>

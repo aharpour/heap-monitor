@@ -21,10 +21,7 @@ tbody tr:nth-child(odd) {
 }
 
 
-table {
- border: 1px solid;
 
-}
 
 
 section {
@@ -63,7 +60,7 @@ section {
 <section>
 <div class="info">
 <div class="table">
-<table>
+<table border="border: 1px solid">
 	<thead>
 		<tr>
 			<th>Usage</th>
