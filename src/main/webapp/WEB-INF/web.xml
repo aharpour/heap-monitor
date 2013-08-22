@@ -38,7 +38,7 @@
 
   <login-config>
     <auth-method>BASIC</auth-method>
-    <realm-name>Admin Realm</realm-name>
+    <realm-name>Heap Monitor Realm</realm-name>
   </login-config>
   
 </web-app>

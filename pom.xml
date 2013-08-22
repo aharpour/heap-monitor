@@ -53,9 +53,11 @@
         <version>6.1.10</version>
         <configuration>
           <scanIntervalSeconds>3</scanIntervalSeconds>
+          <stopPort>9000</stopPort>
+          <stopKey>stop</stopKey>
           <userRealms>
             <userRealm implementation="org.mortbay.jetty.security.HashUserRealm">
-              <name>Admin Realm</name>
+              <name>Heap Monitor Realm</name>
               <config>etc/realm.properties</config>
             </userRealm>
           </userRealms>
