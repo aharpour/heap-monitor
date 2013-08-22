@@ -1,17 +1,17 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-<web-app>
-  <display-name>Memory Monitor Application</display-name>
 
-  <servlet>
-    <servlet-class>com.aharpour.codelib.MemoryMonitor</servlet-class>
-    <servlet-name>monitor</servlet-name>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>monitor</servlet-name>
+  <display-name>Heap Monitor Application</display-name>
+
+  <filter>
+    <filter-name>monitor</filter-name>
+    <filter-class>net.sourceforge.heapmonitor.MemoryMonitorFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>monitor</filter-name>
     <url-pattern>/*</url-pattern>
-  </servlet-mapping>
+  </filter-mapping>
+
 </web-app>
