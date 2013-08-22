@@ -3,7 +3,7 @@
   <groupId>net.sourceforge.heapmonitor</groupId>
   <artifactId>heap-monitor</artifactId>
   <packaging>war</packaging>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>Heap Monitor</name>
   <url>http://heap-monitor.sourceforge.net/</url>
@@ -11,9 +11,9 @@
   </properties>
 
   <scm>
-    <connection>scm:svn:http://svn.code.sf.net/p/heap-monitor/code/heap-monitor/trunk/</connection>
-    <developerConnection>scm:svn:https://svn.code.sf.net/p/heap-monitor/code/heap-monitor/trunk/</developerConnection>
-    <url>https://sourceforge.net/projects/heap-monitor/</url>
+    <connection>scm:svn:http://svn.code.sf.net/p/heap-monitor/code/heap-monitor/tags/1.0</connection>
+    <developerConnection>scm:svn:https://svn.code.sf.net/p/heap-monitor/code/heap-monitor/tags/1.0</developerConnection>
+    <url>https://sourceforge.net/projects/heap-monitor/tags/1.0</url>
   </scm>
 
   <distributionManagement>
