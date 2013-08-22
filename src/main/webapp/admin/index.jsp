@@ -11,40 +11,59 @@ request.setAttribute("memoryData", memoryData);
 <html>
 <head>
 <style type="text/css">
-form {
- display: inline;
+td, th {
+	padding: 5px;
+	border-bottom: 1px solid black;
+	
+}
+tbody tr:nth-child(odd) {
+   background-color: #F9F9F9;
 }
 
-input[type="submit"] {
+
+table {
+ border: 1px solid;
+
+}
+
+
+section {
+	width: 500px;
+	margin: 100px auto;
+}
+
+.info table {
+	margin: 0 auto;
+}
+.buttons {
+	width: 240px;
+	margin: 10px auto;
+	
+}
+
+.buttons form  {
+ 	width: 100px;
+ 	margin: 0 10px;
+	float: left;
+}
+.buttons form input[type="submit"] {
+
 	background-color: #5e99c9;
 	height: 50px;
 	width: 100px;
 	font-size: 17px;
 	font-weight: bold;
 	color: #dddddd;
-}
-
-.info div{
-	float: left;
-}
-.buttons {
-	clear: both;
-	
+	margin: 10px auto;
 }
 </style>
 
 </head>
 <body>
-<section class="info">
-<div class="memory-usage-chart">
-	<canvas id="pie-chart"></canvas>
-</div>
-<div class="pie-chart">
-	<canvas id="pie-chart"></canvas>
-</div>
-
+<section>
+<div class="info">
 <div class="table">
-<table border="1">
+<table>
 	<thead>
 		<tr>
 			<th>Usage</th>
@@ -79,8 +98,8 @@ input[type="submit"] {
 	</tbody>
 </table>
 </div>
-</section>
-<section class="buttons">
+</div>
+<div class="buttons">
 <form action="" method="post">
 	<input value="invokeGC" type="hidden" name="test">
 	<input type="submit" value="invoke GC">
@@ -88,6 +107,7 @@ input[type="submit"] {
 <form action="" metdod="get">
 	<input type="submit" value="Refresh">
 </form>
+</div>
 </section>
 <script type="text/javascript">
 
